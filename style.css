@@ -1,0 +1,52 @@
+ul.navbar{
+    list-style-type: none;
+   
+    margin:0;
+    padding:0;
+    top: 50px;
+    overflow: hidden;
+    background-color: #111;
+}
+li.navbar{
+    float: left;
+}
+li.navbar a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.navbar a:hover {
+    background-color: gray;
+}
+
+li.search{
+    float: right;
+    
+}
+
+.search-bar{
+
+    width: 18px;
+
+    height: 18px;
+
+    
+
+    top: 16px;
+
+    right: 18px;
+
+
+
+    color: #d1d2d2;
+
+    font-size: 18px;
+}
+
+
+
+
+ 
