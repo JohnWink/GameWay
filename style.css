@@ -1,17 +1,7 @@
-.grad{
-     
-         background-repeat: no-repeat;
-        background-color: white; /* For browsers that do not support gradients */
-        background-image: linear-gradient(white, lightblue, white); /* Standard syntax (must be last) */
-        background-size: auto;
-
-    
-}
-
 .flex-container{
     display: flex;
   flex-direction: column;
-  height:100px;
+   justify-content: space-around;
  
 }
 .flex-imgContainer{
@@ -121,7 +111,12 @@
   .navbar button:hover .search-bar {
     background: #ccc;
   }
-
+  .grad{
+     background-repeat: no-repeat;
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(white, lightblue, white); /* Standard syntax (must be last) */
+    background-size: auto;
+  }
 
 
 
