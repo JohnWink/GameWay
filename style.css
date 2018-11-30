@@ -1,3 +1,32 @@
+.grad{
+     
+         background-repeat: no-repeat;
+        background-color: white; /* For browsers that do not support gradients */
+        background-image: linear-gradient(white, lightblue, white); /* Standard syntax (must be last) */
+        background-size: auto;
+
+    
+}
+
+.flex-container{
+    display: flex;
+  flex-direction: column;
+  height:100px;
+ 
+}
+.flex-imgContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.indexIMG{
+    width: 400px;
+    height: auto;
+}
+.fixedContainer{
+    position:fixed;
+    top:0;
+    width:100%;
+}
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -16,6 +45,7 @@
 .dropdown {
     float: left;
     overflow: hidden;
+    
 }
 
 .dropdown .dropbtn {
@@ -27,12 +57,13 @@
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    
 }
+
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: gray;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -40,15 +71,18 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+  
 }
 
 .dropdown-content a {
+
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+   
 }
 
 .dropdown-content a:hover {
@@ -59,28 +93,34 @@
     display: block;
 }
 
+
+
+
 .search{
     float: right;
 }
 
-.search-bar{
-
-    width: 18px;
-
-    height: 18px;
-
-    
-
-    top: 16px;
-
-    right: 18px;
-
-
-
-    color: #d1d2d2;
-
-    font-size: 18px;
-}
+.navbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .navbar button .search-bar {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 6px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar button:hover .search-bar {
+    background: #ccc;
+  }
 
 
 
