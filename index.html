@@ -10,23 +10,83 @@
     
 </head>
 <body>
-        
-            <ul class="navbar">
-                <li class="navbar"><a>Olá</a></li>
-                <li class="navbar"><a>adeus</a></li>
-                <li class="navbar"><a>categorias</a></li>
-                <li class="navbar"><a>adeus</a></li>
-                <li class="navbar"><a>adeus</a></li>
-                <li class="navbar"><a>adeus</a></li>
-                <li class="search"><form method="get" action="#"> == $0
-                        <input placeholder="search" name="search"> 
-                        <i class="fa fa-search" style="top: 16px; right:18px">
-                            ::before
-                         </i>
-                        </form>
-                        </li>
-            </ul>
-                
+        <div class="fixedContainer">
+        <div class="navbar"><!--Header-->
+                <a href="#index.html">Home</a>
+                <a href="#news">News</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Genres
+                  </button>
+                  <div class="dropdown-content">
+                      <a href="#Action">Action</a>
+                      <a href="#Strategy">Strategy</a>
+                      <a href="#RPG">RPG</a>
+                      <a href="#Adventure">Adventure</a>
+                   </div>
+                </div>
+                  <div class="search">
+                        <form  method="get" action="#">
+                                <input type="text" placeholder="search..." name="search"> 
+                                <button class="search-bar" type="submit" ></button>
+                                </form>
+                </div> 
+              </div>
+        </div>
+
+           <br></br>
+           
+          <div class="grad"><!--Webpage body-->
+            <div class="flex-container">
+              <div><h1>Recommended</h1>
+                <div class="flex-imgContainer">
+                  <div>
+                    <h1 style="text-align: center;">Overwatch</h1>
+                    <img class="indexIMG" src="Overwatch.jpg">
+                  </div>
+                  <div>
+                    <h1 style="text-align: center;">DOOM</h1>
+                    <img class="indexIMG" src="DOOM.jpg">
+                  </div>
+                  <div>
+                    <h1 style="text-align: center;">Metro 2033</h1>
+                    <img class="indexIMG" src="metro_2033.jpg">
+                  </div>
+                </div>
+              </div> 
+              <div><h1>Latest</h1>
+                <div class="flex-imgContainer">
+                  <div>
+                    <h1 style="text-align: center;">RIDE 3</h1>
+                    <img class="indexIMG" src="RIDE3.jpg">
+                  </div>
+                  <div>
+                    <h1 style="text-align: center;">Broken Reality</h1>
+                    <img class="indexIMG" src="brokenReality.png">
+                  </div>
+                  <div>
+                    <h1 style="text-align: center;">Asterix And Obelix XXL2</h1>
+                    <img class="indexIMG" src="asterixObelixXXL.jpg">
+                  </div>
+                </div>
+              </div>
+              <div> <h1>Specials</h1>
+                <div class="flex-imgContainer">
+                  <div>
+                    <h1 style="text-align: center;">They Are Billions</h1>
+                    <img class="indexIMG" src="theyAreBillions.jpg">
+                  </div>
+                  <div>
+                    <h1 style="text-align: center;">Ancestors Legacy</h1>
+                    <img class="indexIMG" src="ancestorsLegacy.jpg">
+                  </div>
+                  <div>
+                    <h1 style="text-align: center;">Battle Brothers</h1>
+                    <img class="indexIMG" src="battleBrothers.jpg">
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </div>    
             
 </body>
 </html>
