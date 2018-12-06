@@ -124,8 +124,9 @@ body{
 }
 .flex-imgContainer{
 
+
     border-radius: 25px;
-    background-image: url("WoodTexture.png");
+    background-image: url("WoodTexture2.png");
     display: flex;
     justify-content: space-around;
  
@@ -142,9 +143,10 @@ body{
     border-style: solid;
     border-color: white;
 }
-.indexImg:hover{
+.indexIMG:hover{
 
-    background-color:grey;
+    opacity: 0.5;
+  filter: alpha(opacity=50);
 
 }
 
