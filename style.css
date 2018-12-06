@@ -1,14 +1,10 @@
 
 body{
-    
     background-image: url("galaxy.jpg");
-  
-
-
-
-
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 .fixedContainer{
 
     left:0;
@@ -107,7 +103,7 @@ body{
     background: #ccc;
   }
   .grad{
-    position:absolute;
+    position:relative;
       Left:0;
       width: 100%;
       background:no-repeat;
@@ -127,8 +123,9 @@ body{
     color: white;
 }
 .flex-imgContainer{
-    position:relative;
-    background-image: url("Carbontexture.png");
+
+    border-radius: 25px;
+    background-image: url("WoodTexture.png");
     display: flex;
     justify-content: space-around;
  
