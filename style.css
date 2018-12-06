@@ -1,39 +1,11 @@
-.flex-container{
-    display: flex;
-  flex-direction: column;
-   justify-content: space-around;
-   
- 
-}
-.flex-imgContainer{
-    display: flex;
-    justify-content: space-around;
-    background-image: url("Carbontexture.png");
-}
 
-.flex-imgContainer h1{
-    text-align: center;
-    color:white;
-}
-.indexIMG{
-    width: 400px;
-    height: 200px;
-    cursor:pointer;
-    border-style: solid;
-    border-color: white;
-}
-.indexImg:hover{
-
-    background-color:grey;
-
-}
 .fixedContainer{
     position:fixed;
+    left:0;
     top:0;
     width:100%;
 }
-.navbar {
-   
+.navbar { 
     overflow: hidden;
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
@@ -125,12 +97,45 @@
     background: #ccc;
   }
   .grad{
+    position:absolute;
+    
+      Left:0;
       width: 100%;
      background-repeat: no-repeat;
     background-color: white; /* For browsers that do not support gradients */
     background-image: linear-gradient(rgb(185, 185, 185), grey, #292c2f); /* Standard syntax (must be last) */
-    background-size: auto;
+    z-index: -1;
   }
+
+  .flex-container{
+    display: flex;
+  flex-direction: column;
+   justify-content: space-around;
+   
+ 
+}
+.flex-imgContainer{
+    display: flex;
+    justify-content: space-around;
+    background-image: url("Carbontexture.png");
+}
+
+.flex-imgContainer h1{
+    text-align: center;
+    color:white;
+}
+.indexIMG{
+    width: 400px;
+    height: 200px;
+    cursor:pointer;
+    border-style: solid;
+    border-color: white;
+}
+.indexImg:hover{
+
+    background-color:grey;
+
+}
 
   .footer-distributed{
     
