@@ -1,6 +1,16 @@
 
+body{
+    
+    background-image: url("galaxy.jpg");
+  
+
+
+
+
+
+}
 .fixedContainer{
-    position:fixed;
+
     left:0;
     top:0;
     width:100%;
@@ -98,26 +108,30 @@
   }
   .grad{
     position:absolute;
-    
       Left:0;
       width: 100%;
-     background-repeat: no-repeat;
-    background-color: white; /* For browsers that do not support gradients */
-    background-image: linear-gradient(rgb(185, 185, 185), grey, #292c2f); /* Standard syntax (must be last) */
+      background:no-repeat;
     z-index: -1;
   }
 
   .flex-container{
+      position:relative;
     display: flex;
   flex-direction: column;
    justify-content: space-around;
    
  
 }
+.flex-container h1{
+    text-align:center;
+    color: white;
+}
 .flex-imgContainer{
+    position:relative;
+    background-image: url("Carbontexture.png");
     display: flex;
     justify-content: space-around;
-    background-image: url("Carbontexture.png");
+ 
 }
 
 .flex-imgContainer h1{
