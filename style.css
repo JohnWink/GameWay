@@ -8,11 +8,24 @@
 .flex-imgContainer{
     display: flex;
     justify-content: space-around;
-    background-color: gray;
+    background-image: url("Carbontexture.png");
+}
+
+.flex-imgContainer h1{
+    text-align: center;
+    color:white;
 }
 .indexIMG{
     width: 400px;
     height: 200px;
+    cursor:pointer;
+    border-style: solid;
+    border-color: white;
+}
+.indexImg:hover{
+
+    background-color:grey;
+
 }
 .fixedContainer{
     position:fixed;
@@ -90,6 +103,7 @@
 
 
 .search{
+    margin-right:30px;
     float: right;
 }
 
@@ -100,14 +114,10 @@
     border: none;
   }
   
-  .navbar button .search-bar {
-    float: right;
-    padding: 6px 10px;
+.search-bar {
+    padding: 6px;
     margin-top: 8px;
-    margin-right: 6px;
-    background: #ddd;
     font-size: 17px;
-    border: none;
     cursor: pointer;
   }
   
@@ -118,10 +128,85 @@
       width: 100%;
      background-repeat: no-repeat;
     background-color: white; /* For browsers that do not support gradients */
-    background-image: linear-gradient(white, lightblue, white); /* Standard syntax (must be last) */
+    background-image: linear-gradient(rgb(185, 185, 185), grey, #292c2f); /* Standard syntax (must be last) */
     background-size: auto;
   }
 
+  .footer-distributed{
+    
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color: #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
 
 
  
