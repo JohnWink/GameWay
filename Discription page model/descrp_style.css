@@ -104,6 +104,24 @@ body{
   }
 /*----------------------------------------------------*/
 
+.flex_Mainbox{
+    
+      position:relative;
+    display: flex;
+  flex-direction: column;
+   justify-content: space-around;
+   padding: 3% 4%;
+   
+}
+.flex_secondary{
+    padding-left:5%;
+    padding-top:1%;
+   border-radius: 25px;
+   border-color: #ffffff;
+   background-color: #8f9296;
+   color: #ffffff;
+ 
+}
 
 
 
