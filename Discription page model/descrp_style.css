@@ -118,6 +118,7 @@ body{
     padding-left:3%;
     padding-right: 3%;
     padding-top:1%;
+    padding-bottom: 1%;
    
    border-radius: 25px;
    background-color: #8f9296;
@@ -133,21 +134,27 @@ body{
     /*container structure and layout*/
     display: flex;
   flex-direction: row;
-   justify-content: space-around;
+   justify-content: space-between;
    /*colorbackground helper */
-   background-color: aqua;   
+   /*background-color: aqua;  */ 
 }
 /*coverbox item*/
 .coverbox{
+    padding-left: 2%;
     height: 350px;
     width: 350px;
 }
 
 /*buycontainer item*/
 .buybox{
-    position: center;
+    /*Main sturcture of the buy contrainer item*/
+    margin-right: 3%;
+    flex-basis: 300px;
+    align-self: flex-start;
+    text-align: center;
     border-radius: 25px;
     background-color: #646669;
+    /*font and button maniputation style*/
     color: #ffffff;
 }
 
