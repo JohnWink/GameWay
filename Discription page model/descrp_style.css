@@ -116,6 +116,7 @@ body{
 .flex_secondary{
     /*box shape ,inside content of container*/
     padding-left:3%;
+    padding-right: 3%;
     padding-top:1%;
    
    border-radius: 25px;
@@ -133,11 +134,8 @@ body{
     display: flex;
   flex-direction: row;
    justify-content: space-around;
-   
-    border-radius: 25px;
-   background-color: #646669;
-   color: #ffffff;
-
+   /*colorbackground helper */
+   background-color: aqua;   
 }
 /*coverbox item*/
 .coverbox{
@@ -147,7 +145,10 @@ body{
 
 /*buycontainer item*/
 .buybox{
-    color: white;
+    position: center;
+    border-radius: 25px;
+    background-color: #646669;
+    color: #ffffff;
 }
 
 
