@@ -4,6 +4,10 @@ body{
     background-attachment: fixed;
 }
 
+h1{
+    text-align: center;
+}
+
 /*Nav bar and search bar css style content code section*/
 .fixedContainer{
 

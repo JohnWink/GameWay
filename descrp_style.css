@@ -3,7 +3,9 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+h2{
+    text-align:center;
+}
 /*Nav bar and search bar css style content code section*/
 .fixedContainer{
 
