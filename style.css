@@ -27,12 +27,14 @@ body{
 }
 
 .dropdown {
+    
     float: left;
     overflow: hidden;
     
 }
 
 .dropdown .dropbtn {
+  
     font-size: 16px;    
     border: none;
     outline: none;
@@ -49,6 +51,7 @@ body{
     background-color: gray;
 }
 .dropdown-content {
+
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -70,10 +73,12 @@ body{
 }
 
 .dropdown-content a:hover {
+    
     background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
+
     display: block;
 }
 
