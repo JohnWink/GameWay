@@ -1,8 +1,10 @@
 body{
-    background-image: url("galaxy.jpg");
+    background-image: url("Page_Material/galaxy.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+
 h2{
     text-align:center;
 }
@@ -106,6 +108,7 @@ h2{
   }
 /*----------------------------------------------------*/
 /*--------------------Description body section-----------------------*/
+
 .flex_Mainbox{
     /*Container structure and positioning trough an invisable container  */
       position:relative;
@@ -128,7 +131,10 @@ h2{
  
 }
 
-
+.flex_Videoboxes{
+    display:flex;
+    justify-content: space-around;
+}
 
 
 /*Buybox and cover whitmeta critic*/
@@ -144,7 +150,7 @@ h2{
 .coverbox{
     border-radius: 10%;
     padding-left: 2%;
-    height: 350px;
+    height: 450px;
     width: 350px;
 }
 
@@ -223,7 +229,7 @@ h2{
     bottom: 0;
     right: 15px;
     border: 3px solid #f1f1f1;
-    z-index: 9;
+    z-index: 1;
   }
   
   /* Add styles to the form container */
@@ -233,21 +239,7 @@ h2{
     background-color: white;
   }
   
-  /* Full-width input fields */
-  .form-container input[type=text], .form-container input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-  }
-  
-  /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
+ 
   /* Set a style for the submit/login button */
   .form-container .btn {
     background-color: #4CAF50;

@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("galaxy.jpg");
+    background-image: url("Page_Material/galaxy.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -131,7 +131,7 @@ body{
 
 
     border-radius: 25px;
-    background-image: url("WoodTexture2.png");
+    background-image: url("Page_Material/WoodTexture.png");
     display: flex;
     justify-content: space-around;
  
