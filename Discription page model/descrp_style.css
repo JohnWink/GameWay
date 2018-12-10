@@ -179,7 +179,22 @@ body{
 }
 /*buy button stylization */
 .buy_button{
-    
+    margin: 1%;
+    margin-top: 2%;
+    width: 175px;
+    height: 115x;
+    background-color: rgb(121, 118, 124);
+    font-size: 90%;
+    font: bold;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.buy_button:hover{
+    background-color:  rgb(142, 140, 145);
+
 }
 
 
