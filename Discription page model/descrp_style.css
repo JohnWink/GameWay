@@ -229,12 +229,20 @@ h2{
     z-index: 9;
   }
   
+  
   /* Add styles to the form container */
   .form-container {
     max-width: 300px;
     padding: 10px;
-    background-color: white;
+    background-image: url(carbonBackground2.png);
+    
+    color: rgb(228, 228, 228);
   }
+
+  .form-container h1 {
+      color: rgb(253, 252, 252);
+  }
+ 
   
   /* Full-width input fields */
   .form-container input[type=text], .form-container input[type=password] {
@@ -260,12 +268,12 @@ h2{
     cursor: pointer;
     width: 100%;
     margin-bottom:10px;
-    opacity: 0.8;
+    opacity: 0.75;
   }
   
   /* Add a red background color to the cancel button */
   .form-container .cancel {
-    background-color: red;
+    background-color: rgb(238, 39, 39);
   }
   
   /* Add some hover effects to buttons */
