@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--This page is a base page for the games descriptions -->
+    <!--Each page will have its own description, pictures and video youtube links-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="descrp_style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GameWay</title>
+</head>
+<body>
+    <!--HEADER AND SEARCH BAR TOP SCREEN SECTION-->
+        <div class="background">
+                <div class="fixedContainer">
+          
+                  <div class="navbar"><!--Header-->
+                          <a href="index.html">Home</a>
+                          <a href="#news">News</a>
+                          <div class="dropdown">
+                            <button class="dropbtn">Genres
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#Action">Action</a>
+                                <a href="#Strategy">Strategy</a>
+                                <a href="#RPG">RPG</a>
+                                <a href="#Adventure">Adventure</a>
+                             </div>
+                          </div>
+                            <div class="search">
+                                  <form  method="get" action="#">
+                                          <input type="text" placeholder="search..." name="search"> 
+                                          <button class="search-bar" type="submit" ><i class="fa fa-search"></i></button>
+                                          </form>
+                          </div> 
+                        </div>
+                  </div>
+        </div>
+
+        <!---------------DESCRIPTION BASE SECTION OF THE CHOOSEN GAME ------------------->
+         
+        <br>
+        <div class="flex_Mainbox">
+            <div class="flex_secondary">
+                <h1>VideoGame Tittle</h1>
+                <br>
+            <!--Game box cover -->
+                
+
+            <!--THE Buy button along whit some minor info and metracritic score-->
+                <div class="flex_Buynbox">
+
+                    <div><img class="coverbox" src="Doom_Material/DOOMCoverpage.jpg"></div>
+                    <div class="buybox">
+                        <form>
+                            <label>Price</label>
+                            <br>
+                            <label style="font-size: 185%">29,90 €</label>
+                            <br>
+                            <br>
+                            <laber>Metacritic Score</laber>
+                            <br>
+                            <div class="metabox">
+                                <label >85</label>
+                            </div>
+                            
+                            <button onclick="checkOut()" class="buy_button" type="submit" value="Buy Key">Buy It</button> 
+                            
+                        </form>
+                    </div>
+                    <script>
+                        function checkOut() {
+                          alert("The game has been successfully bought!");
+                          
+                        }
+                        </script>
+                </div>
+                <!-- the game description -->
+                <br>
+                <br>
+             
+                <h2>History of DOOM</h2>
+                <p>Doom is a first-person shooter video game developed by id Software and published by Bethesda Softworks. A reboot of the Doom franchise, it is the fourth title in the main series and the first major installment since Doom 3 in 2004. It was released worldwide on Microsoft Windows, PlayStation 4, and Xbox One in May 2016 and is powered by id Tech 6. A port for Nintendo Switch, co-developed with Panic Button, was released in November 2017.</p>
+                <h2>Play Your Role</h2>
+                <p>Players take the role of an unnamed space marine as he battles demonic forces from Hell that have been unleashed by the Union Aerospace Corporation on a future-set colonized planet Mars. The gameplay returns to a faster pace with more open-ended levels, closer to the first two games than the slower survival horror approach of Doom 3. It also features environment traversal, character upgrades, and the ability to perform executions known as "glory kills". The game also supports an online multiplayer component and a level editor known as "SnapMap", co-developed with Certain Affinity and Escalation Studios respectively.</p>
+                <h2>Metro 2033 Jorney</h2>
+                <p>Doom was well received by critics and players. The single-player campaign, graphics, soundtrack, and gameplay received considerable praise, with reviewers crediting the game for recapturing the spirit of the classic Doom games and first-person shooters of the 1990s, whereas the multiplayer mode drew the most significant criticism. It was the second best-selling video game in North America and the UK a few weeks after its release, and sold over 500,000 copies for PCs within the same time period.</p>
+                <br>
+            
+               
+      <!---------------..........----Media youtube video section codes----------------------------->            
+                <div class="flex_Videoboxes"> 
+                    <!--Video 1-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RO90omga8D4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    
+                   <!--Video 2-->
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/NH4uwzLU-qw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            
+                </div>
+            <br>
+            
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-----------------------------------Popup Form--------------------------------------->
+        <button class="open-button" onclick="openForm()">Requirements</button>
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <h1>DOOM's Minimal Requirements</h1>
+                <p>CPU: Intel Core i5-2400 or better / AMD FX-8320 or better.</p>
+                <p>OS: Windows 7, Windows 8.1, Windows 10 (64-bit versions only)</p>
+                <p>VIDEO CARD: NVIDIA GeForce GTX 670 (2GB) or better / AMD Radeon HD 7870 (2GB) or better.</p>
+                <p>FREE DISK SPACE: 45 GB.</p>
+                <p>DEDICATED VIDEO RAM: 2048 MB.</p>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+          <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+          
+         
+
+
+        <!--------------------------------Footer of the site----------------------------------->
+                    <footer class="footer-distributed">
+          
+                      <div class="footer-right">
+                
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                
+                      </div>
+                
+                      <div class="footer-left">
+                
+                        <p class="footer-links">
+                          <a href="#">Home</a>
+                          ·
+                          <a href="#"></a>
+                          ·
+                          <a href="#"></a>
+                          ·
+                          <a href="#">About</a>
+                          ·
+                          <a href="#">FaQ</a>
+                          ·
+                          <a href="#">Contact Us</a>
+                        </p>
+                
+                        <p>GameWay &copy; 2018</p>
+                      </div>
+                
+                    </footer>
+
+             
+</body>
+</html>

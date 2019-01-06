@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--This page is a base page for the games descriptions -->
+    <!--Each page will have its own description, pictures and video youtube links-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="descrp_style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GameWay</title>
+</head>
+<body>
+    <!--HEADER AND SEARCH BAR TOP SCREEN SECTION-->
+        <div class="background">
+                <div class="fixedContainer">
+          
+                  <div class="navbar"><!--Header-->
+                          <a href="index.html">Home</a>
+                          <a href="#news">News</a>
+                          <div class="dropdown">
+                            <button class="dropbtn">Genres
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#Action">Action</a>
+                                <a href="#Strategy">Strategy</a>
+                                <a href="#RPG">RPG</a>
+                                <a href="#Adventure">Adventure</a>
+                             </div>
+                          </div>
+                            <div class="search">
+                                  <form  method="get" action="#">
+                                          <input type="text" placeholder="search..." name="search"> 
+                                          <button class="search-bar" type="submit" ><i class="fa fa-search"></i></button>
+                                          </form>
+                          </div> 
+                        </div>
+                  </div>
+        </div>
+
+        <!---------------DESCRIPTION BASE SECTION OF THE CHOOSEN GAME ------------------->
+         
+        <br>
+        <div class="flex_Mainbox">
+            <div class="flex_secondary">
+                <h1>RIDE 3</h1>
+                <br>
+            <!--Game box cover -->
+                
+
+            <!--THE Buy button along whit some minor info and metracritic score-->
+                <div class="flex_Buynbox">
+
+                    <div><img class="coverbox" src="Ride3_Material/Ride3Cover.jpg"></div>
+                    <div class="buybox">
+                        <form>
+                            <label>Price</label>
+                            <br>
+                            <label style="font-size: 185%">49,99 €</label>
+                            <br>
+                            <br>
+                            <laber>Metacritic Score</laber>
+                            <br>
+                            <div class="metabox">
+                                <label >74</label>
+                            </div>
+                            
+                            <button onclick="checkOut()" class="buy_button" type="submit" value="Buy Key">Buy It</button> 
+                            
+                        </form>
+                    </div>
+                    <script>
+                        function checkOut() {
+                          alert("The game has been successfully bought!");
+                          
+                        }
+                        </script>
+                </div>
+                <!-- the game description -->
+                <br>
+                <br>
+             
+                <h2>Ride the most beautiful and powerful bikes ever crafted.</h2>
+                <p>Race in the most amazing roads in the world on your two wheels companion. Customize your bike in every single detail, making it a reflection of your riding style and of your own personality. Feel the adrenaline, the competition, the freedom. Feel everything.</p>
+                <h2>The most complete digital Motorbike Encyclopedia</h2>
+                <p>More than 230 bike models at Day 1, with more than 70 never seen before on a RIDE game. 30 manufacturers, both historical and contemporary, 9 of which completely new. 7 different categories to satisfy all preferences and riding style.</p>
+                <h2>Browse. Collect. Ride. A new volume-based Single Player experience.</h2>
+                <p>Unlock, collect and access new challenges with more than 60 magazines. A unique, volume-based Single Player experience: each volume will tell the story of a specific bike category, manufacturers’ history or iconic track. Collect them all and unlock the most extensive bike knowledge you’ll ever need to fully enjoy the RIDE 3 experience.</p>
+                <br>
+            
+               
+      <!---------------..........----Media youtube video section codes----------------------------->            
+                <div class="flex_Videoboxes"> 
+                    <!--Video 1-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LVKULxSo9VY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    
+                   <!--Video 2-->
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/kOwDMj3OQtU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            
+                </div>
+            <br>
+            
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-----------------------------------Popup Form--------------------------------------->
+        <button class="open-button" onclick="openForm()">Requirements</button>
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <h1>RIDE 3 Requirements</h1>
+                <p>OS: Windows 7 64-Bit or later.</p>
+                <p>Processor: Intel Core i7-2600, AMD FX-8350 or equivalent.</p>
+                <p>RAM: 16 GB.</p>
+                <p>Hard Drive: 23 GB</p>
+                <p>Graphics: NVIDIA GeForce GTX 960 with 4 GB VRAM or more | AMD Radeon R9 380 with 4 GB VRAM or more.</p>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+          
+          <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+
+
+        <!--------------------------------Footer of the site----------------------------------->
+                    <footer class="footer-distributed">
+          
+                      <div class="footer-right">
+                
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                
+                      </div>
+                
+                      <div class="footer-left">
+                
+                        <p class="footer-links">
+                          <a href="#">Home</a>
+                          ·
+                          <a href="#"></a>
+                          ·
+                          <a href="#"></a>
+                          ·
+                          <a href="#">About</a>
+                          ·
+                          <a href="#">FaQ</a>
+                          ·
+                          <a href="#">Contact Us</a>
+                        </p>
+                
+                        <p>GameWay &copy; 2018</p>
+                      </div>
+                
+                    </footer>
+
+    
+</body>
+</html>

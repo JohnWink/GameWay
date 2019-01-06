@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--This page is a base page for the games descriptions -->
+    <!--Each page will have its own description, pictures and video youtube links-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="descrp_style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GameWay</title>
+</head>
+<body>
+    <!--HEADER AND SEARCH BAR TOP SCREEN SECTION-->
+        <div class="background">
+                <div class="fixedContainer">
+          
+                  <div class="navbar"><!--Header-->
+                          <a href="index.html">Home</a>
+                          <a href="#news">News</a>
+                          <div class="dropdown">
+                            <button class="dropbtn">Genres
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#Action">Action</a>
+                                <a href="#Strategy">Strategy</a>
+                                <a href="#RPG">RPG</a>
+                                <a href="#Adventure">Adventure</a>
+                             </div>
+                          </div>
+                            <div class="search">
+                                  <form  method="get" action="#">
+                                          <input type="text" placeholder="search..." name="search"> 
+                                          <button class="search-bar" type="submit" ><i class="fa fa-search"></i></button>
+                                          </form>
+                          </div> 
+                        </div>
+                  </div>
+        </div>
+
+        <!---------------DESCRIPTION BASE SECTION OF THE CHOOSEN GAME ------------------->
+         
+        <br>
+        <div class="flex_Mainbox">
+            <div class="flex_secondary">
+                <h1>Alternate Reality</h1>
+                <br>
+            <!--Game box cover -->
+                
+
+            <!--THE Buy button along whit some minor info and metracritic score-->
+                <div class="flex_Buynbox">
+
+                    <div><img class="coverbox" src="BrokenReality_Material/BrokenRealityCover.jpg"></div>
+                    <div class="buybox">
+                        <form>
+                            <label>Price</label>
+                            <br>
+                            <label style="font-size: 185%">14,99 €</label>
+                            <br>
+                            <br>
+                            <laber>Metacritic Score</laber>
+                            <br>
+                            <div class="metabox">
+                                <label >69</label>
+                            </div>
+                            
+                            <button onclick="checkOut()" class="buy_button" type="submit" value="Buy Key">Buy It</button> 
+                            
+                        </form>
+                    </div>
+                    <script>
+                        function checkOut() {
+                          alert("The game has been successfully bought!");
+                          
+                        }
+                        </script>
+                </div>
+                <!-- the game description -->
+                <br>
+                <br>
+             
+                <h2>Gamble Away!</h2>
+                <p>Find passion in our exclusive Love Cruise, or gamble away in the casinos of GeoCity. Everything you need is one click away!</p>
+                <h2>Begone, Ads!</h2>
+                <p>Cut ads into pieces with your katana, find secrets with your camera, teleport with your bookmarker and much more with our varied set of tools!</p>
+                <h2>Colect The Likes!</h2>
+                <p>Collect likes to upgrade your account and gain access to new levels!</p>
+                <br>
+            
+               
+      <!---------------..........----Media youtube video section codes----------------------------->            
+                <div class="flex_Videoboxes"> 
+                    <!--Video 1-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8GCbNV0T6o4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                 
+                   <!--Video 2-->
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/ordpAZrSd9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            
+                </div>
+            <br>
+            
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-----------------------------------Popup Form--------------------------------------->
+        <button class="open-button" onclick="openForm()">Requirements</button>
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <h1>Broken Reality Minimal Requirements</h1>
+                <p>OS: Windows 7.</p>
+                <p>Processor: 3.0 GHz P4, Dual Core 2.0 (or higher)</p>
+                <p>Memory: 2GB RAM.</p>
+                <p>Hard Drive: 5GB space on a 7,200 RPM drive, or better.</p>
+                <p>Graphics: Video card must be 128 MB or more and with support for Pixel Shader 2.0b (ATI Radeon X800 or higher / NVIDIA GeForce 7600 or higher / Intel HD Graphics 2000 or higher).</p>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+          
+          <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+
+
+        <!--------------------------------Footer of the site----------------------------------->
+                    <footer class="footer-distributed">
+          
+                      <div class="footer-right">
+                
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                
+                      </div>
+                
+                      <div class="footer-left">
+                
+                        <p class="footer-links">
+                          <a href="#">Home</a>
+                          ·
+                          <a href="#"></a>
+                          ·
+                          <a href="#"></a>
+                          ·
+                          <a href="#">About</a>
+                          ·
+                          <a href="#">FaQ</a>
+                          ·
+                          <a href="#">Contact Us</a>
+                        </p>
+                
+                        <p>GameWay &copy; 2018</p>
+                      </div>
+                
+                    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--This page is a base page for the games descriptions -->
+    <!--Each page will have its own description, pictures and video youtube links-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="descrp_style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GameWay</title>
+</head>
+<body>
+    <!--HEADER AND SEARCH BAR TOP SCREEN SECTION-->
+        <div class="background">
+                <div class="fixedContainer">
+          
+                  <div class="navbar"><!--Header-->
+                          <a href="index.html">Home</a>
+                          <a href="#news">News</a>
+                          <div class="dropdown">
+                            <button class="dropbtn">Genres
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#Action">Action</a>
+                                <a href="#Strategy">Strategy</a>
+                                <a href="#RPG">RPG</a>
+                                <a href="#Adventure">Adventure</a>
+                             </div>
+                          </div>
+                            <div class="search">
+                                  <form  method="get" action="#">
+                                          <input type="text" placeholder="search..." name="search"> 
+                                          <button class="search-bar" type="submit" ><i class="fa fa-search"></i></button>
+                                          </form>
+                          </div> 
+                        </div>
+                  </div>
+        </div>
+
+        <!---------------DESCRIPTION BASE SECTION OF THE CHOOSEN GAME ------------------->
+         
+        <br>
+        <div class="flex_Mainbox">
+            <div class="flex_secondary">
+                <h1>Ancestors Legacy</h1>
+                <br>
+            <!--Game box cover -->
+                
+
+            <!--THE Buy button along whit some minor info and metracritic score-->
+                <div class="flex_Buynbox">
+
+                    <div><img class="coverbox" src="AncestorsLegacy_Material/AncestorsLegacyCover.jpg"></div>
+                    <div class="buybox">
+                        <form>
+                            <label>Price</label>
+                            <br>
+                            <label style="font-size: 185%">29,99€</label>
+                            <br>
+                            <br>
+                            <laber>Metacritic Score</laber>
+                            <br>
+                            <div class="metabox">
+                                <label >85</label>
+                            </div>
+                            
+                            <button onclick="checkOut()" class="buy_button" type="submit" value="Buy Key">Buy It</button> 
+                            
+                        </form>
+                    </div>
+                    <script>
+                        function checkOut() {
+                          alert("The game has been successfully bought!");
+                          
+                        }
+                        </script>
+                </div>
+                <!-- the game description -->
+                <br>
+                <br>
+             
+                <h2>Take Command!</h2>
+                <p>Take command of your army as you storm through medieval Europe in an extensive series of campaigns. Choosing one of the four available nations – Viking, Anglo-Saxon, German, Slav – you will be tasked with more than just conquering, raiding and pillaging enemy camps, villages and towns. Only by utilizing the full range of available tactical options, taking strategic advantage of the environment, and managing your temporary bases and settlements, will you emerge victorious.</p>
+                <h2>About</h2>
+                <p>Ancestors Legacy is a history-inspired real-time strategy game influenced by historical events in the Middle Ages. The game combines resource management and base building with large-scale, squad-based battles across vast battlefields, all rendered in great detail thanks to the Unreal Engine 4 tech. Experience medieval bloodshed like never before, thanks to the cinematic action camera that puts you right in the middle of the battle at the press of a button. </p>
+                <h2>Features</h2>
+                <p>4 playable nations in an extensive single player campaign inspired by historical events;
+                    Advanced tactical options combining the use of terrain, experience and morale;
+                    Cinematic battle camera view puts you right in the center of the action;
+                    Outstanding visual fidelity powered by Unreal Engine 4;
+                    Intense multiplayer battles;
+                    Streamlined resource management and village construction;
+                    Precise controls with native gamepad support.</p>
+                <br>
+            
+               
+      <!---------------..........----Media youtube video section codes----------------------------->            
+                <div class="flex_Videoboxes"> 
+                    <!--Video 1-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EW74W28advQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+
+                   <!--Video 2-->
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/c9DnafMpikA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            
+                </div>
+            <br>
+            
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-----------------------------------Popup Form--------------------------------------->
+        <button class="open-button" onclick="openForm()">Requirements</button>
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <h1>Ancestors Legacy Minimal Requirements</h1>
+                <p>OS: Windows® 7 (Service Pack 1) , Windows 8.1 and Windows 10 - (64-bit only).</p>
+                <p>Processor: 2.6 GHz Intel® Core™ i5-750 or 3.2 GHz </p>
+                <p>Memory: 4 GB RAM</p>
+                <p>Hard Drive: 21 GB available space</p>
+                <p>Graphics: NVIDIA GeForce GTX 460 or AMD Radeon HD5850 (1 GB VRAM)</p>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+          
+          <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+
+
+        <!--------------------------------Footer of the site----------------------------------->
+                    <footer class="footer-distributed">
+          
+                      <div class="footer-right">
+                
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                
+                      </div>
+                
+                      <div class="footer-left">
+                
+                        <p class="footer-links">
+                          <a href="#">Home</a>
+                          ·
+                          <a href="#"></a>
+                          ·
+                          <a href="#"></a>
+                          ·
+                          <a href="#">About</a>
+                          ·
+                          <a href="#">FaQ</a>
+                          ·
+                          <a href="#">Contact Us</a>
+                        </p>
+                
+                        <p>GameWay &copy; 2018</p>
+                      </div>
+                
+                    </footer>
+
+    
+</body>
+</html>
