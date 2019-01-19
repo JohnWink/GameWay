@@ -9,6 +9,11 @@ h2{
     text-align:center;
 }
 /*Nav bar and search bar css style content code section*/
+
+p{
+    text-align: left;
+    width: 80%;
+}
 .fixedContainer{
     position:fixed;
     left:0;
@@ -112,7 +117,7 @@ h2{
 
 .flex_Mainbox{
     /*Container structure and positioning trough an invisable container  */
-      position:relative;
+
     display: flex;
   flex-direction: column;
    justify-content: space-around;
@@ -125,7 +130,6 @@ h2{
     padding-right: 3%;
     padding-top:1%;
     padding-bottom: 1%;
-   
    border-radius: 25px;
    background-color: #8f9296;
    color: #ffffff;
@@ -142,25 +146,24 @@ h2{
 .flex_Buynbox{
     /*container structure and layout*/
     display: flex;
-  flex-direction: row;
-   justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+  
    /*colorbackground helper */
    /*background-color: aqua;  */ 
 }
 /*coverbox item*/   
 .coverbox{
-    border-radius: 10%;
-    padding-left: 2%;
+    border-radius: 10px;
+    padding-left: 2px;
     height: 150px;
-    width: 150px;
+    width: 100px;
 }
 
 /*buycontainer item*/
 .buybox{
     /*Main sturcture of the buy contrainer item*/
-    
-    margin-right: 3%;
-    flex-basis: 250px;
+    flex-basis: 12%;
     align-self: flex-start;
     text-align: center;
     border-radius: 30px;
@@ -168,7 +171,6 @@ h2{
     /*font and button maniputation style*/
     color: #ffffff;
     font-size:110%;
-        
 }
 
 /*score box shape*/
