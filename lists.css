@@ -12,7 +12,7 @@ h2{
 
 p{
     text-align: left;
-    width: 80%;
+    width: 70%;
 }
 .fixedContainer{
     position:fixed;
@@ -157,7 +157,7 @@ p{
     border-radius: 10px;
     padding-left: 2px;
     height: 150px;
-    width: 100px;
+    width: 140px;
 }
 
 /*buycontainer item*/
