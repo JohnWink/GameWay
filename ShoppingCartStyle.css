@@ -69,6 +69,10 @@ body{
 
 }
 
+.shopcart{
+    float: right;
+}
+/*-----------Flexbox contents games----------*/
 .flexbox{
     position: relative;
     display: flex;
@@ -115,7 +119,9 @@ body{
 
 }
 
+/*---------------- Shoppingcart box -------------- */
 .outputBox{
+    color: rgb(229, 230, 235);
     position: fixed;
     top: 50px;
     right: 15px;
@@ -124,6 +130,12 @@ body{
     border-radius: 25px;
     width: 500px;
     background-color: grey;
+    background-image: url(Page_material/carbonBackground.png);
+    border: 3px solid #f1f1f1;
+}
+
+.outputBox h2{
+    padding-left: 8px; 
 }
 
 
@@ -133,7 +145,8 @@ body{
 
 .outputBox p{
     text-align: center;
-    background-color:white;
+    color: #292c2f;
+    background-color: #b4bdc7;
 }
 
 
