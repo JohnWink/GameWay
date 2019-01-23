@@ -38,22 +38,23 @@
         <div class ="itemBox">
                 <img class="itemIMG" src="https://blznav.akamaized.net/img/games/cards/card-overwatch-7eff92e1257149aa.jpg">
                 <p>Overwatch features a wide array of unique heroes, ranging from a time-jumping adventurer, to an armored, rocket-hammer-wielding warrior, to a transcendent robot monk. Every hero plays differently, and mastering their abilities is the key to unlocking their potential.</p>
-                <button onclick="addItemFunction(50, 'Overwatch')" class ="itemButton">buy</button> <!-- This button adds the price and the name of the Item bought onto the method that it's calling-->
+                
+                <button onclick="addItemFunction(49.99, 'Overwatch')" class ="itemButton">buy</button> <!-- This button adds the price and the name of the Item bought onto the method that it's calling-->
         </div>
         <div class="itemBox">
-                <img class="itemIMG" src="https://blznav.akamaized.net/img/games/cards/card-overwatch-7eff92e1257149aa.jpg">
+                <img class="itemIMG" src="Metro2033_Material/metro_2033.jpg">
                 <p>Overwatch features a wide array of unique heroes, ranging from a time-jumping adventurer, to an armored, rocket-hammer-wielding warrior, to a transcendent robot monk. Every hero plays differently, and mastering their abilities is the key to unlocking their potential.</p>
-                <button class ="itemButton">buy</button>
+                <button onclick="addItemFunction(19.99, 'Metro 2033')" class ="itemButton">buy</button> 
         </div>
         <div class ="itemBox">
-                <img class="itemIMG" src="https://blznav.akamaized.net/img/games/cards/card-overwatch-7eff92e1257149aa.jpg">
+                <img class="itemIMG" src="Ride3_Material/RIDE3.jpg">
                 <p>Overwatch features a wide array of unique heroes, ranging from a time-jumping adventurer, to an armored, rocket-hammer-wielding warrior, to a transcendent robot monk. Every hero plays differently, and mastering their abilities is the key to unlocking their potential.</p>
-                <button class ="itemButton">buy</button>
+                <button onclick="addItemFunction(59.99, 'RIDE3')" class ="itemButton">buy</button> 
         </div>
         <div class ="itemBox" >
-                <img class="itemIMG" src="https://blznav.akamaized.net/img/games/cards/card-overwatch-7eff92e1257149aa.jpg">
+                <img class="itemIMG" src="BrokenReality_Material/brokenReality.png">
                 <p>Overwatch features a wide array of unique heroes, ranging from a time-jumping adventurer, to an armored, rocket-hammer-wielding warrior, to a transcendent robot monk. Every hero plays differently, and mastering their abilities is the key to unlocking their potential.</p>
-                <button class ="itemButton">buy</button>
+                <button onclick="addItemFunction(29.99, 'BrokenReality')" class ="itemButton">buy</button> 
         </div>
     </div>
 
@@ -61,19 +62,22 @@
 </div>
 <div class ="outputBox" id="outputBox2">
         <h1>Shopping Cart </h1>
-        
+        <div id = "totalDiv">
+            <h2 id= "totalId">Total: </h2>
+        </div>
             
        
 </div>
 
 <script>
+  var total = 0; 
         function addItemFunction(value, name){
           
               // creates the <p> element
              let item = document.createElement("p"); 
 
              // prepares the text 
-             let gameName = document.createTextNode(name + ":           " + value);
+             let gameName = document.createTextNode(name + ":           " + value + " euros");
 
              //enters the prepared text onto the <p> element
              item.appendChild(gameName);
@@ -84,9 +88,35 @@
             // writes the element onto the located <div>
              outputColumn.appendChild(item);
 
-             return sum;
+              // adds the value of the selected product to the total variable previously created
+             total = total + value;
+
+              // selects the <h2> that wants to be replaced
+              let totalText = document.getElementById("totalId");
+
+              // creates the element of the replacement
+              let totalValueItem = document.createElement("h2");
+
+              // adds an id to locate the changed element in future updates
+              totalValueItem.setAttribute("id" , "totalId");
+
+              // adds text with the newly calculated total
+              let totalValue = document.createTextNode("Total: " + total);
+
+              //adds this prepared text onto the element
+              totalValueItem.appendChild(totalValue);
+
+              // locates the division where the element that we want to replace is
+              let totalDiv = document.getElementById("totalDiv");
+
+              // replaces the element ( replaces totalText with totlValueItem)
+              totalDiv.replaceChild(totalValueItem, totalText)
+
+
          }
      </script>
+
+
  
 <footer class="footer-distributed">
 
