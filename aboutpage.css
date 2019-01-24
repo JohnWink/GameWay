@@ -1,5 +1,4 @@
 
-
 body{
     background-image: url("Page_Material/galaxy.jpg");
     background-repeat: no-repeat;
@@ -113,7 +112,27 @@ h2{
 /*----------------------------------------------------*/
 /*--------------------Description body section-----------------------*/
 
-
+.flex_Mainbox{
+    /*Container structure and positioning trough an invisable container  */
+      position:relative;
+    display: flex;
+  flex-direction: column;
+   justify-content: space-around;
+   padding: 3% 4%;
+   
+}
+.flex_secondary{
+    /*box shape ,inside content of container*/
+    padding-left:3%;
+    padding-right: 3%;
+    padding-top:1%;
+    padding-bottom: 1%;
+   
+   border-radius: 25px;
+   background-color: #8f9296;
+   color: #ffffff;
+ 
+}
 
 
 
