@@ -138,7 +138,7 @@
               totalValueItem.setAttribute("id" , "totalId");
 
               // adds text with the newly calculated total
-              let totalValue = document.createTextNode("Total: " + total);
+              let totalValue = document.createTextNode("Total: " + total + " Euros");
 
               //adds this prepared text onto the element
               totalValueItem.appendChild(totalValue);
@@ -179,8 +179,17 @@
             // adds an id to locate the changed element in future updates
             totalValueItem.setAttribute("id" , "totalId");
 
-            // adds text with the newly calculated total
-            let totalValue = document.createTextNode("Total: " + total);
+            // adds text with the newly calculated total. If the total is 0, the "euros" won't appear, for logic purposes
+            let totalValue;
+            
+            if(total != 0){
+             totalValue = document.createTextNode("Total: " + total + " Euros");
+              }
+            else if(total == 0){
+             totalValue = document.createTextNode("Total: ");
+              }
+
+            
 
             //adds this prepared text onto the element
             totalValueItem.appendChild(totalValue);
