@@ -149,6 +149,13 @@ body{
     background-color: #b4bdc7;
 }
 
+.itemDiv{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 10px;
+
+}
 
 
 /* footer links*/
