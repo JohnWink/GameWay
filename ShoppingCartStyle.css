@@ -97,6 +97,9 @@ body{
     flex-direction: row;
     justify-content: space-between;
     margin: 10px;
+    border-radius: 25px;
+    background-color: rgb(103, 106, 107);
+    
 
     
 }
@@ -104,27 +107,51 @@ body{
     
     text-align: center;
     padding: 70px 20px;
+    color: rgb(226, 226, 226);
   
 }
 .itemIMG{
     margin: auto;
     width: 250px;
     height: 200px;
+    border-radius: 10px;
 }
 
 .itemButton{
-    height: 50px;
-    width: 100px;
-    background-color: #008CBA;/* Green */
+    height: 70px;
+    width: 90px;
+    margin:auto;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #4c4f52;
     border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: auto;
+    border-radius: 5px;
     cursor: pointer;
+    transition-duration: 0.4s;
+
+}
+
+.itemButton:hover{
+    background-color: #3a3d3f;
+
+}
+
+.removeButton{
+    
+    font-weight: bold;
+    width: 8%;
+    
+    color: whitesmoke;
+    background-color: #5e6163;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+}
+
+.removeButton:hover{
+    background-color: #909497;
 }
 
 /*---------------- Shoppingcart box -------------- */
@@ -153,9 +180,10 @@ body{
 
 .outputBox p{
     text-align: center;
-    color: white;
-    margin: 10px;
-
+    color: #292c2f;
+    background-color: #b4bdc7;
+    border-radius: 3px;
+    font-size: 120%;
 }
 /* to Custom the item bars on the shopping cart*/
 .itemDiv{
@@ -165,6 +193,23 @@ body{
     justify-content: space-between;
     margin: 10px;
 
+}
+
+.removeButton{
+    
+    font-weight: bold;
+    width: 6%;
+    color: whitesmoke;
+    background-color: #5e6163;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+}
+
+.removeButton:hover{
+    background-color: #909497;
 }
 
 

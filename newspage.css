@@ -1,19 +1,13 @@
 body{
-    background-image: url("../GameWay/Page_Material/galaxy.jpg");
+    background-image: url("Page_Material/galaxy.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-
 h2{
     text-align:center;
 }
-/*Nav bar and search bar css style content code section*/
-
-p{
-    text-align: left;
-    width: 70%;
-}
+/*-----------Nav bar and search bar css style content code section-----------*/
 .fixedContainer{
     position:fixed;
     left:0;
@@ -108,6 +102,8 @@ p{
     font-size: 17px;
     cursor: pointer;
   }
+
+
   
   .navbar button:hover .search-bar {
     background: #ccc;
@@ -117,7 +113,7 @@ p{
 
 .flex_Mainbox{
     /*Container structure and positioning trough an invisable container  */
-
+      position:relative;
     display: flex;
   flex-direction: column;
    justify-content: space-around;
@@ -130,162 +126,25 @@ p{
     padding-right: 3%;
     padding-top:1%;
     padding-bottom: 1%;
+   
    border-radius: 25px;
    background-color: #8f9296;
    color: #ffffff;
-   
-   
-}
-
-.flex_Videoboxes{
-    display:flex;
-    justify-content: space-around;
+   text-align: left;
+   line-height: 50%;
+ 
 }
 
 
-/*Buybox and cover whitmeta critic*/
-.flex_Buynbox{
-    /*container structure and layout*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-radius: 10px;
-   background-color: #7c7d81;
-    
-    
-    
-  
-   /*colorbackground helper */
-   /*background-color: aqua; */
 
-}
 
-.flex_Buynbox p{
-    font-size: 110%;
-}
-/*coverbox item*/   
-.coverbox{
-    border-radius: 10px;
-    
-    height: 150px;
-    width: 140px;
-}
 
-/*buycontainer item*/
-.buybox{
-    /*Main sturcture of the buy contrainer item*/
-    flex-basis: 12%;
-    align-self: flex-start;
-    text-align: center;
-    border-radius: 30px;
-    background-color: #646669;
-    /*font and button maniputation style*/
-    color: #ffffff;
-    font-size:110%;
-}
 
-/*score box shape*/
-.metabox{
-    background-color: rgb(141, 207, 42);     
-    align-self: flex-start;
-    justify-content: center;
-    margin-left:35%;
-    margin-right:35%;
-    margin-top:3%;
-    margin-bottom: 4%;         
-    text-align: center;
-    font-size:150%;
-    border-radius: 10px;
-    color: #ffffff
-}
-.metabox_yellow{
-    background-color: #fc3;   
-    align-self: flex-start;
-    justify-content: center;
-    margin-left:35%;
-    margin-right:35%;
-    margin-top:3%;
-    margin-bottom: 4%;         
-    text-align: center;
-    font-size:150%;
-    border-radius: 10px;
-    color: #ffffff
-}
-/*buy button stylization */
-.buy_button{
-    margin: 1%;
-    margin-top: 2%;
-    width: 175px;
-    height: 115x;
-    background-color: rgb(121, 118, 124);
-    font-size: 90%;
-    font: bold;
-    color: #ffffff;
-    border-radius: 10px;
-    cursor: pointer;
 
-}
 
-.buy_button:hover{
-    background-color:  rgb(142, 140, 145);
 
-}
 
-/*-------------------------------------------------------*/
 
-/* Popup Form links */
-
-.open-button {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
-  }
-  
-  /* The popup form - hidden by default */
-  .form-popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 1;
-  }
-  
-  /* Add styles to the form container */
-  .form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: white;
-  }
-  
-  /* Set a style for the submit/login button */
-  .form-container .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.8;
-  }
-  
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: red;
-  }
-  
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
 
 
 /*-------------------------------------------------------*/
@@ -367,6 +226,3 @@ p{
 		line-height: 1.8;
 	}
 }
-
-
- 

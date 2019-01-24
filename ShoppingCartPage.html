@@ -17,7 +17,7 @@
 
         <div class="navbar"><!--Header-->
                 <a href="index.html">Home</a>
-                <a href="#news">News</a>
+                <a href="newspage.html">News</a>
                 <div class="dropdown">
                   <button class="dropbtn">Genres
                   </button>
@@ -112,6 +112,9 @@
 
               // the button will have "x" tas text
              let removeButtonText = document.createTextNode("X");
+
+             //adding a class to the button
+             removeButton.setAttribute("class","removeButton");
 
               //the text is added to the button
              removeButton.appendChild(removeButtonText);
