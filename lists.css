@@ -133,7 +133,8 @@ p{
    border-radius: 25px;
    background-color: #8f9296;
    color: #ffffff;
- 
+   
+   
 }
 
 .flex_Videoboxes{
@@ -148,14 +149,24 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 10px;
+   background-color: #7c7d81;
+    
+    
+    
   
    /*colorbackground helper */
-   /*background-color: aqua;  */ 
+   /*background-color: aqua; */
+
+}
+
+.flex_Buynbox p{
+    font-size: 110%;
 }
 /*coverbox item*/   
 .coverbox{
     border-radius: 10px;
-    padding-left: 2px;
+    
     height: 150px;
     width: 140px;
 }
