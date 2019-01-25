@@ -1,5 +1,5 @@
 body{
-    background-image: url("Page_Material/galaxy.jpg");
+    background-image: url("../Pages_Materials/galaxy.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -79,6 +79,7 @@ body{
 }
 
 .shopcart{
+    margin-right: 30px;
     float: right;
 }
 /*-----------Flexbox contents games----------*/
@@ -174,7 +175,7 @@ body{
     border-radius: 25px;
     width: 30%;
     background-color: grey;
-    background-image: url(Page_material/carbonBackground.png);
+    background-image: url("../Pages_Materials/carbonBackground.png");
     border: 3px solid #f1f1f1;
 
 }
@@ -198,6 +199,7 @@ body{
 /* to Custom the item bars on the shopping cart*/
 .itemDiv{
     background-color: grey;
+    border-radius: 7px;
     display: flex; 
     flex-direction: row; 
     justify-content: space-between;

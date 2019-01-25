@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="ShoppingCartStyle.css">
+    <link rel="stylesheet" href="index_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>GameWay</title>
@@ -16,23 +16,22 @@
       <div class="fixedContainer">
 
         <div class="navbar"><!--Header-->
-                <a href="index.html">Home</a>
-                <a href="newspage.html">News</a>
-                <div class="dropdown">
-                  <button class="dropbtn">Genres
-                  </button>
-                  <div class="dropdown-content">
-                      <a href="list_action.html">Action</a>
-                                <a href="list_strategy.html">Strategy</a>
-                                <a href="list_RPG.html">RPG</a>
-                                <a href="list_adventure.html">Adventure</a>
-                   </div>
-                </div>
-                <div>
-                  <div class="shopcart">
-                    <a href="ShoppingCartPage.html">
-                    <img src="Page_Material\shopping-cart.png" alt="shopping cart page!" height="16px" width="16px" >
-                    </a>
+          <a href="../Mainpage/index.html">Home</a>
+          <a href="../NewsPage/index.html">News</a>
+          <div class="dropdown">
+            <button class="dropbtn">Genres
+            </button>
+            <div class="dropdown-content">
+                <a href="../ListPages/index_action.html">Action</a>
+                <a href="../ListPages/index_strategy.html">Strategy</a>
+                <a href="../ListPages/index_RPG.html">RPG</a>
+                <a href="../ListPages/index_adventure.html">Adventure</a>
+             </div>
+          </div>
+            <div class="shopcart">
+                    <a href="../ShoppingCartPage/index.html">
+                            <img src="../Pages_Materials/shopping-cart.png" alt="shopping cart page!" height="16px" width="16px" >
+                            </a>
                   </div>                  
                 </div>
                
@@ -49,17 +48,17 @@
                 <button onclick="addItemFunction(50, 'Overwatch')" class ="itemButton">buy</button> <!-- This button adds the price and the name of the Item bought onto the method that it's calling-->
         </div>
         <div class="itemBox">
-                <img class="itemIMG" src="Metro2033_Material/metro_2033.jpg">
+                <img class="itemIMG" src="../DescriptionPages/Metro2033Page/Metro2033_Material/metro_2033.jpg">
                 <p>Overwatch features a wide array of unique heroes, ranging from a time-jumping adventurer, to an armored, rocket-hammer-wielding warrior, to a transcendent robot monk. Every hero plays differently, and mastering their abilities is the key to unlocking their potential.</p>
                 <button onclick="addItemFunction(20, 'Metro 2033')" class ="itemButton">buy</button> 
         </div>
         <div class ="itemBox">
-                <img class="itemIMG" src="Ride3_Material/RIDE3.jpg">
+                <img class="itemIMG" src="../DescriptionPages/Ride3Page/Ride3_Material/RIDE3.jpg">
                 <p>Overwatch features a wide array of unique heroes, ranging from a time-jumping adventurer, to an armored, rocket-hammer-wielding warrior, to a transcendent robot monk. Every hero plays differently, and mastering their abilities is the key to unlocking their potential.</p>
                 <button onclick="addItemFunction(60, 'RIDE3')" class ="itemButton">buy</button> 
         </div>
         <div class ="itemBox" >
-                <img class="itemIMG" src="BrokenReality_Material/brokenReality.png">
+                <img class="itemIMG" src="../DescriptionPages/BrokenRealityPage/BrokenReality_Material/brokenReality.png">
                 <p>Overwatch features a wide array of unique heroes, ranging from a time-jumping adventurer, to an armored, rocket-hammer-wielding warrior, to a transcendent robot monk. Every hero plays differently, and mastering their abilities is the key to unlocking their potential.</p>
                 <button onclick="addItemFunction(30, 'BrokenReality')" class ="itemButton">buy</button> 
         </div>
@@ -83,7 +82,7 @@
     <h1>Error</h1>
     <p>Too many items on the shopping cart. Please remove some items and prioritize what you want to buy.</p>
     <p> Are you really going to buy all of those games though?</p>
-    <img src= "Page_Material/pikachuShook.jpg">
+    <img src= "../Pages_Materials/pikachuShook.jpg">
   </div>
 
 </div>
@@ -267,9 +266,9 @@
   <div class="footer-left">
 
     <p class="footer-links">
-      <a href="index.html">Home</a>
+      <a href="../Mainpage/index.html">Home</a>
       .
-      <a href="aboutpage.html">About/Contact</a>
+      <a href="../AboutPage/index.html">About/Contact</a>
       
     </p>
 

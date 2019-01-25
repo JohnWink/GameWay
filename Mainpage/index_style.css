@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("../Page_Material/galaxy.jpg");
+    background-image: url("../Pages_Materials/galaxy.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -132,7 +132,7 @@ body{
 }
 .flex-imgContainer{
     border-radius: 25px;
-    background-image: url("Page_Material/WoodTexture.png");
+    background-image: url("../Pages_Materials/WoodTexture.png");
     display: flex;
     justify-content: space-around;
 }
