@@ -180,8 +180,8 @@ body{
 
 .outputBox p{
     text-align: center;
-    color: #292c2f;
-    background-color: #b4bdc7;
+    color: white;
+
     border-radius: 3px;
     font-size: 120%;
 }
