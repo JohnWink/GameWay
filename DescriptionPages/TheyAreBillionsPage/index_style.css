@@ -1,5 +1,5 @@
 body{
-    background-image: url("Page_Material/galaxy.jpg");
+    background-image: url("../../Pages_Materials/galaxy.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -243,7 +243,7 @@ h2{
   .form-container {
     max-width: 300px;
     padding: 10px;
-    background-image: url(Page_material/carbonBackground.png);
+    background-image: url("../../Pages_Materials/carbonBackground.png");
     
     color: rgb(228, 228, 228);
   }
